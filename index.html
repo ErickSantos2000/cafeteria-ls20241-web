@@ -2,126 +2,123 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- Bootstrap -->
-  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para responsividade -->
+  <title>Document</title> <!-- Título do documento -->
 
-  <link rel="stylesheet" href="./css/footer.css">
+  <!-- Bootstrap -->
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!-- Link para o CSS do Bootstrap -->
+  
+  <!-- CSS puro -->
+  <link rel="stylesheet" href="./css/footer.css"> <!-- Link para um arquivo CSS personalizado para o rodapé -->
 
   <!-- Font Awesome -->
-  <link href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+  <link href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" /> <!-- Link para os ícones do Font Awesome -->
+  
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" /> <!-- Link para a fonte Roboto do Google Fonts -->
+  
   <!-- MDB -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" /> <!-- Link para o CSS do MDBootstrap -->
 </head>
 
 <body>
   <header>
-    <!-- Animated navbar-->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll" data-mdb-navbar-init>
+    <!-- Navbar animada -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll" data-mdb-navbar-init> <!-- Navbar fixa no topo com efeito de rolagem -->
       <div class="container-fluid">
-        <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation"> <!-- Botão para colapsar/expandir a navbar -->
           <span class="d-flex justify-content-start align-items-center">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i> <!-- Ícone de menu (hamburger) -->
           </span>
         </button>
-        <a class="navbar-brand text-light" href="#">Salento.</a>
+        <a class="navbar-brand text-light" href="#">Salento.</a> <!-- Nome da marca na navbar -->
 
-        <div class="collapse navbar-collapse" id="navbarExample01">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link text-light" aria-current="page" href="#intro">Home</a>
+        <div class="collapse navbar-collapse" id="navbarExample01"> <!-- Div que colapsa para mostrar os links da navbar -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!-- Lista de itens da navbar -->
+            <li class="nav-item active"> <!-- Item da navbar ativo -->
+              <a class="nav-link text-light" aria-current="page" href="#intro">Home</a> <!-- Link para a seção "Home" -->
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Cardápio</a>
+              <a class="nav-link text-light" href="cardapio.html">Cardápio</a> <!-- Link para a página de "Cardápio" -->
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- Animated navbar -->
+    <!-- Navbar animada -->
 
-    <!-- Background image -->
-    <div id="intro" class="bg-image" style="
-              background-image: url(https://images.unsplash.com/reserve/DHHQbqc0RrWVf0uDNe5E_The%20Litte%20Cafe.jpg?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-              height: 100vh;
-              ">
-      <div class="mask text-white" style="background-color: rgba(0, 0, 0, 0.8)">
-        <div class="container d-flex align-items-center text-center h-100">
+    <!-- Imagem de fundo -->
+    <div id="intro" class="bg-image" style="background-image: url(https://images.unsplash.com/reserve/DHHQbqc0RrWVf0uDNe5E_The%20Litte%20Cafe.jpg?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); height: 100vh;"> <!-- Seção com uma imagem de fundo -->
+      <div class="mask text-white" style="background-color: rgba(0, 0, 0, 0.8)"> <!-- Máscara escura para o texto -->
+        <div class="container d-flex align-items-center text-center h-100"> <!-- Container flexível para centralizar o conteúdo -->
           <div>
-            <h1 class="mb-5">Salento. Café</h1>
+            <h1 class="mb-5">Salento. Café</h1> <!-- Título principal -->
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis molestiae laboriosam numquam expedita ullam saepe ipsam, deserunt provident corporis, sit non accusamus maxime, magni nulla quasi iste ipsa architecto? Autem!
-            </p>
+            </p> <!-- Parágrafo de descrição -->
           </div>
         </div>
       </div>
     </div>
-    <!-- Background image -->
+    <!-- Imagem de fundo -->
   </header>
-  <main class="p-4">
-    <!-- <div class="container">
-      <p id="hora"></p>
-      <p id="data"></p>
-      <button type="button" id="iniciar" name="iniciar" class="btn btn-primary">Iniciar</button>
-      <button type="button" id="parar" name="parar" class="btn btn-danger">Parar</button>
-      <p id="mensagem"></p>
-    </div> -->
-
-    <div class="container">
-      <div id="cards" class="row">
-
+  
+  <main class="p-4"> <!-- Seção principal do documento com padding -->
+    <div class="container"> <!-- Container para centralizar o conteúdo -->
+      <div id="cards" class="row"> <!-- Div para armazenar os cartões (cards) -->
+        <!-- Os cartões serão preenchidos aqui -->
       </div>
     </div>
   </main>
-  <footer class="text-center bg-body-tertiary">
-    <!-- Grid container -->
-    <div class="container pt-4">
-      <!-- Section: Social media -->
-      <section class="mb-4">
+  
+  <footer class="text-center bg-body-tertiary"> <!-- Rodapé do documento com fundo claro -->
+    <!-- Container de grade -->
+    <div class="container pt-4"> <!-- Container com padding superior -->
+      <!-- Seção: Mídia social -->
+      <section class="mb-4"> <!-- Seção para ícones de redes sociais -->
         <!-- Facebook -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a> <!-- Ícone do Facebook -->
 
         <!-- Twitter -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a> <!-- Ícone do Twitter -->
 
         <!-- Google -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a> <!-- Ícone do Google -->
 
         <!-- Instagram -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a> <!-- Ícone do Instagram -->
 
-        <!-- Linkedin -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
-        <!-- Github -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+        <!-- LinkedIn -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a> <!-- Ícone do LinkedIn -->
+        
+        <!-- GitHub -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a> <!-- Ícone do GitHub -->
       </section>
-      <!-- Section: Social media -->
+      <!-- Seção: Mídia social -->
     </div>
-    <!-- Grid container -->
+    <!-- Container de grade -->
 
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    <!-- Direitos autorais -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);"> <!-- Seção de direitos autorais com fundo claro -->
       © 2020 Copyright:
-      <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a> <!-- Link para o site MDBootstrap -->
     </div>
-    <!-- Copyright -->
+    <!-- Direitos autorais -->
   </footer>
 
-  <!-- <script src="./js/index.js"></script> -->
-  <!-- <script src="./js/datahora.js"></script> -->
-
-  <script src="./js/cafeteria.js"></script>
-  <!-- Bootstrap -->
-  <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
+  <!-- JavaScript -->
+  <!-- jQuery -->
+  <script src="./node_modules/mdbootstrap/js/jquery.min.js"></script> <!-- Link para a biblioteca jQuery -->
+  
   <!-- MDB -->
-  <script type="text/javascript" src="./node_modules/mdbootstrap/js/mdb.min.js"></script>
-  <script type="text/javascript" src="./node_modules/mdbootstrap/js/jquery.min.js"></script>
+  <script type="text/javascript" src="./node_modules/mdbootstrap/js/mdb.min.js"></script> <!-- Link para o JavaScript do MDBootstrap -->
+  
+  <!-- Bootstrap -->
+  <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> <!-- Link para o Popper.js, necessário para alguns componentes do Bootstrap -->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> <!-- Link para o JavaScript do Bootstrap -->
+  
+  <script type="module" src="./js/main.js"></script> <!-- Link para um script JavaScript personalizado -->
 </body>
 
 </html>
